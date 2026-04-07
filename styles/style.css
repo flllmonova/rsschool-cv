@@ -207,13 +207,13 @@ body {
   margin-block-end: 0.75rem;
 }
 
-.outer-link:not(.github-link) {
+.outer-link {
   text-decoration: none;
   color: var(--link-color);
   border-block-end: 2px solid transparent;
 }
 
-.outer-link:not(.github-link):hover {
+.outer-link:hover {
   border-block-end: 2px solid var(--link-color);
 }
 
