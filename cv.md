@@ -37,3 +37,11 @@ function rgb(r, g, b) {
   return hexColor;
 }
 ```
+
+## Courses
+* HTML5, CSS3 and JavaScript by code-basics.com;
+* JS / Front-end Pre-school;
+
+## Languages
+* English (A1);
+* Russian (native).
