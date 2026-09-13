@@ -25,18 +25,15 @@ Kata «RGB To Hex Conversion» from Codewars
 > Any values that fall out of that range must be rounded to the closest valid value.
 
 ```
-function cakes(recipe, available) { 
-  const result = [];
-  
-  for (let item in recipe) {
-    if (item in available) {
-      const n = Math.floor(available[item] / recipe[item]);
-      result.push(n);
-    } else {
-      return 0;
-    }
-  }
-  
-  return result.reduce((min, item) => (min < item) ? min : item);
+function rgb(r, g, b) {
+  const hexRadix = 16;
+  const hexPair = 2;
+  const padString = "0";
+  const rgbColor = [r, g, b];
+  const hexColor = rgbColor.map(colorChanel => {
+    const checkedColorChanel = (colorChanel > 255) ? 255 : ((colorChanel >= 0) ? colorChanel : 0);   
+    return checkedColorChanel.toString(hexRadix).padStart(hexPair, padString)
+    }).join("").toUpperCase(); 
+  return hexColor;
 }
 ```
