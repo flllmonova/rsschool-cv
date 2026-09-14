@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ирина Филимонова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-wrapper">   
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="#contacts">Контактные данные</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="link nav__link" href="#skills">Навыки</a>
+            </li>
+            
+            <li class="nav__item">
+              <a class="link nav__link" href="#projects">Проекты</a>
+            </li>
+            
+            <li class="nav__item">
+              <a class="link nav__link" href="#education">Образование</a>
+            </li>
+            
+            <li class="nav__item">
+              <a class="link nav__link" href="#english">Английский язык</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="section hero">
+          <img class="hero__avatar" src="images/cv-avatar.webp" alt="Cv avatar" width="190" height="190">
+          <hgroup class="hero__text-wrapper">
+            <h1 class="hero__title">
+              Ирина Филимонова
+            </h1>
+            <p class="hero__description">
+              Junior Frontend Developer
+            </p>
+          </hgroup>
+        </section>
+
+        <section class="section contacts" id="contacts">
+          <h2 class="title contacts__title">
+            <span>Контактные данные</span>
+            <span>01</span>
+          </h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              GitHub: <a class="link contacts__link" href="https://github.com/flllmonova" target="_blank" rel="noopener noreferrer">flllmonova</a>
+            </li>
+
+            <li class="contacts__item">
+              Discord: flllmonova
+            </li>
+            
+            <li class="contacts__item">
+              E-mail: <a class="link contacts__link" href="mailto:alpinawhite2@gmail.com">alpinawhite2@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+        
+        <section class="section about" id="about">
+          <h2 class="title about__title">
+            <span>Краткая информация о себе</span>
+            <span>02</span>
+          </h2>
+          <p class="about__text">
+            Моя цель - изучить стек frontend технологий и создавать веб-сайты на высшем уровне.
+          </p>
+        </section>
+
+        <section class="section skills" id="skills">
+          <h2 class="title skills__title">
+            <span>Навыки</span>
+            <span>03</span>
+          </h2>
+
+          <ul class="skills__list">
+            <li class="skills__item item_round-shape">HTML5</li>
+            <li class="skills__item item_round-shape">CSS3</li>
+            <li class="skills__item item_round-shape">JavaScript (basics)</li>
+            <li class="skills__item item_round-shape">Kotlin (basics)</li>
+            <li class="skills__item item_round-shape">Git</li>
+            <li class="skills__item item_round-shape">Github</li>
+            <li class="skills__item item_round-shape">Figma</li>
+            <li class="skills__item item_round-shape">Adobe Photoshop</li>
+          </ul>
+        </section>
+
+        <section class="section code-example" id="code-example">
+          <h2 class="title code-example__title">
+            <span>Пример кода</span>
+            <span>04</span>
+          </h2>
+
+          <figure class="code-example__wrapper">
+            <pre class="code-example__code item_soft-square-shape">
+              <code data-lang="javascript">
+                function cakes(recipe, available) { 
+                  const result = [];
+                  
+                  for (let item in recipe) {
+                    if (item in available) {
+                      const n = Math.floor(available[item] / recipe[item]);
+                      result.push(n);
+                    } else {
+                      return 0;
+                    }
+                  }
+                  
+                  return result.reduce((min, item) => (min &lt; item) ? min : item);
+                }
+              </code>
+            </pre>
+
+            <figcaption class="code-example__caption">
+              Codewars task "Pete, the baker"
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section projects" id="projects">
+          <h2 class="title projects__title">
+            <span>Опыт работы</span>
+            <span>05</span>
+          </h2>
+
+          <ul class="projects__list">
+            <li class="project-item item_soft-square-shape">
+                <h3 class="project-item__title">
+                  <a class="link outer-link project-item__link" href="https://github.com/flllmonova/KotlinTelegramBot" target="_blank" rel="noopener noreferrer">English<br> Learning Bot</a>
+                </h3>
+                <p class="project-item__description">
+                  С помощью бота пользователи могут изучать английские слова и просматривать свой словарный запас.
+                </p>
+            </li>
+
+            <li class="project-item item_soft-square-shape">
+              <h3 class="project-item__title">
+                <a class="link outer-link project-item__link" href="https://github.com/flllmonova/RecipesApp" target="_blank" rel="noopener noreferrer">Recipes<br> App</a>
+              </h3>
+              <p class="project-item__description">
+                Приложение для хранения рецептов и расчета количества ингредиентов, необходимых для приготовления заданного количества порций.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section education" id="education">
+          <h2 class="title education__title">
+              <span>Образование</span>
+              <span>06</span>
+          </h2>
+
+          <ul class="education__list">
+            <li class="education__item item_soft-square-shape">
+              <span>2019 — 2025</span>
+              <span>
+                Уфа, Университет Науки и Технологий<br>
+                Институт Природы и Человека
+              </span>
+            </li>
+
+            <li class="education__item item_soft-square-shape">
+              <span>2026</span>
+              <span>Курсы на <a class="link education__link" href="https://code-basics.com/" target="_blank" rel="noopener noreferrer">code-basics.com</a>: HTML5, CSS3 и JavaScript</span>
+            </li>
+
+            <li class="education__item item_soft-square-shape">
+              <span>2026</span>
+              <span>Курс RS School: <a class="link education__link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">JS / Front-end Pre-school</a></span>
+            </li>
+
+            <li class="education__item item_soft-square-shape">
+              <span>2026</span>
+              <span>Курс RS School: <a class="link education__link" href="https://rs.school/ru/courses/javascript" target="_blank" rel="noopener noreferrer">JS / Front-end</a> (in progress)</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section english" id="english">
+          <h2 class="title english__title">
+            <span>Английский язык</span>
+            <span>07</span>
+          </h2>
+          <p class="english__level item_round-shape">Уровень владения — A1</p>
+        </section>
+      </main>
+      
+      <footer class="footer">
+        <a class="course__link" href="https://rs.school/ru/courses/javascript" target="_blank" rel="noopener noreferrer">
+          <img class="course__logo" src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/9af3d37e80717662fa46835afd2fe6c6f07aff88/tasks/cv/rs-school-logo.svg" alt="RS School logo" width="85">
+        </a>
+
+        <div class="copyright">
+          &copy; <time class="creation-year" datetime="2026">2026</time>
+          GitHub: <a class="github-link outer-link" href="https://github.com/flllmonova" target="_blank" rel="noopener noreferrer">flllmonova</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
