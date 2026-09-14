@@ -42,8 +42,8 @@ function cakes(recipe, available) {
 * [Recipe App](https://github.com/flllmonova/RecipesApp)
 
 ## Образование
-* HTML5, CSS3 and JavaScript by code-basics.com;
-* JS / Front-end Pre-school;
+* HTML5, CSS3 and JavaScript by code-basics.com
+* JS / Front-end Pre-school
 
 ## Английский язык
-* Уровень владения - (A1);
+* Уровень владения - (A1)
