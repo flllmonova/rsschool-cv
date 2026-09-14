@@ -1,14 +1,14 @@
-# Irina Filimonova
+# Ирина Филимонова
 Junior Frontend Developer
 
-## Contact information
+## Контактные данные
 * E-mail: alpinawhite2@gmail.com
 * Discord: flllmonova
 
-## Briefly about myself
-My goal is to learn the technical stack for frontend development and learn how to develop websites and applications at a high level.
+## Краткая информация о себе
+Моя цель - изучить стек frontend технологий и создавать веб-сайты на высшем уровне.
 
-## Skills
+## Навыки
 * **`HTML5`**;
 * **`CSS3`**;
 * **`JavaScript (basics)`**;
@@ -17,31 +17,33 @@ My goal is to learn the technical stack for frontend development and learn how t
 * **`Figma`**;
 * **`Adobe Photoshop`**.
 
-## Code Examples
-Kata «RGB To Hex Conversion» from Codewars
-> The rgb function is incomplete. 
-> Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. 
-> Valid decimal values for RGB are 0 - 255. 
-> Any values that fall out of that range must be rounded to the closest valid value.
+## Пример кода
+Codewars задание "Pete, the baker"
 
 ```
-function rgb(r, g, b) {
-  const hexRadix = 16;
-  const hexPair = 2;
-  const padString = "0";
-  const rgbColor = [r, g, b];
-  const hexColor = rgbColor.map(colorChanel => {
-    const checkedColorChanel = (colorChanel > 255) ? 255 : ((colorChanel >= 0) ? colorChanel : 0);   
-    return checkedColorChanel.toString(hexRadix).padStart(hexPair, padString)
-    }).join("").toUpperCase(); 
-  return hexColor;
+function cakes(recipe, available) { 
+  const result = [];
+                
+  for (let item in recipe) {
+    if (item in available) {
+      const n = Math.floor(available[item] / recipe[item]);
+      result.push(n);
+    } else {
+      return 0;
+    }
+  }
+  
+  return result.reduce((min, item) => (min &lt; item) ? min : item);
 }
 ```
 
-## Courses
+## Проекты
+* [English Learning Bot](https://github.com/flllmonova/KotlinTelegramBot)
+* [Recipe App](https://github.com/flllmonova/RecipesApp)
+
+## Образование
 * HTML5, CSS3 and JavaScript by code-basics.com;
 * JS / Front-end Pre-school;
 
-## Languages
-* English (A1);
-* Russian (native).
+## Английский язык
+* Уровень владения - (A1);
